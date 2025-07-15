@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Font Inter dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Kontainer Utama -->
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl bg-white my-8 rounded-lg shadow-lg border border-gray-200">
+
+        <!-- Header dan Navigasi -->
+        <header class="flex justify-between items-center pb-4 border-b border-gray-200">
+            <h1 class="text-2xl font-bold text-gray-900">Brand</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#header" class="text-gray-600 hover:text-blue-600 transition duration-300">Header</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">Biodata</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition duration-300">Portofolio</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Bagian Selamat Datang -->
+            <section id="header" class="py-12 md:py-20 border-b border-gray-200">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Kolom Teks -->
+                    <div class="text-center md:text-left">
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Selamat Datang di Website Saya</h2>
+                        <p class="text-gray-600 mb-6">
+                            Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">
+                            Pelajari Lebih Lanjut &rarr;
+                        </a>
+                    </div>
+                    <!-- Kolom Gambar -->
+                    <div>
+                        <img src="https://placehold.co/600x400/e2e8f0/cbd5e0?text=600x400" alt="Placeholder gambar 600x400" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian Tentang Saya (Biodata) - Diubah menggunakan Tabel HTML -->
+            <section id="about" class="py-12 md:py-20 text-center border-b border-gray-200">
+                <h2 class="text-3xl font-bold mb-2 text-gray-900">About Me</h2>
+                <p class="text-gray-500 mb-12">A brief introduction about myself</p>
+                
+                <!-- Tabel Informasi Biodata -->
+                <table class="w-full max-w-4xl mx-auto border-separate" style="border-spacing: 1rem;">
+                    <tbody>
+                        <!-- Baris Pertama -->
+                        <tr>
+                            <td class="bg-gray-100 p-4 rounded-lg shadow-sm text-center font-medium text-gray-700">Full Name</td>
+                            <td class="bg-gray-100 p-4 rounded-lg shadow-sm text-center font-medium text-gray-700">Education</td>
+                            <td class="bg-gray-100 p-4 rounded-lg shadow-sm text-center font-medium text-gray-700">Pekerjaan</td>
+                        </tr>
+                        <!-- Baris Kedua -->
+                        <tr>
+                            <td class="bg-gray-100 p-4 rounded-lg shadow-sm text-center font-medium text-gray-700">Contact</td>
+                            <td class="bg-gray-100 p-4 rounded-lg shadow-sm text-center font-medium text-gray-700">Hobi</td>
+                            <td class="bg-gray-100 p-4 rounded-lg shadow-sm text-center font-medium text-gray-700">Alamat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Bagian Portofolio -->
+            <section id="portfolio" class="py-12 md:py-20 text-center">
+                <h2 class="text-3xl font-bold mb-12 text-gray-900">Portofolio</h2>
+                
+                <!-- Grid Kartu Portofolio -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Kartu Proyek 1 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
+                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 1" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-900">Proyek 1</h3>
+                            <p class="text-gray-600">Deskripsi proyek 1.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Proyek 2 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
+                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 2" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-900">Proyek 2</h3>
+                            <p class="text-gray-600">Deskripsi proyek 2.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Proyek 3 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
+                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 3" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-900">Proyek 3</h3>
+                            <p class="text-gray-600">Deskripsi proyek 3.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Proyek 4 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
+                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 4" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-900">Proyek 4</h3>
+                            <p class="text-gray-600">Deskripsi proyek 4.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
