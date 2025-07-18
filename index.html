@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
         /* Menggunakan font Inter sebagai default */
         body {
@@ -20,35 +21,35 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Kontainer Utama -->
-    <div class="container mx-auto p-4 md:p-8 max-w-7xl bg-white my-8 rounded-lg shadow-lg border border-gray-200">
+    <div class="container mx-auto px-2 sm:px-4 md:p-8 max-w-7xl bg-white my-4 md:my-8 rounded-lg shadow-lg border border-gray-200">
 
         <!-- Header dan Navigasi -->
-        <header class="flex justify-between items-center pb-4 border-b border-gray-200">
-            <h1 class="text-2xl font-bold text-gray-900">Personal Branding</h1>
-            <nav class="hidden md:flex space-x-6">
+        <header class="flex flex-col md:flex-row justify-between items-center gap-4 pb-4 border-b border-gray-200">
+            <h1 class="text-2xl font-bold text-gray-900 text-center md:text-left">Personal Branding</h1>
+            <nav class="hidden md:flex flex-wrap space-x-6">
                 <a href="#header" class="text-gray-600 hover:text-blue-600 transition duration-300">Header</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">Biodata</a>
                 <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition duration-300">Portofolio</a>
             </nav>
         </header>
 
-        <main>
+        <main class="w-full">
             <!-- Bagian Selamat Datang -->
-            <section id="header" class="py-12 md:py-20 border-b border-gray-200">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
+            <section id="header" class="py-8 sm:py-12 md:py-20 border-b border-gray-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                     <!-- Kolom Teks -->
                     <div class="text-center md:text-left">
-                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Welcome to my Website</h2>
-                        <p class="text-gray-600 mb-6">
+                        <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4">Welcome to my Website</h2>
+                        <p class="text-gray-600 mb-6 text-base sm:text-lg">
                             Here you will find a complete overview of my skills and experience.
                         </p>
-                        <a href="#" class="text-blue-600 font-semibold hover:underline">
+                        <a href="#" id="learnMoreBtn" class="text-blue-600 font-semibold hover:underline text-base sm:text-lg">
                             Learn More &rarr;
                         </a>
                     </div>
                     <!-- Kolom Gambar -->
                     <div>
-                        <img src="pict/PP.png" alt="Placeholder gambar 600x400" height="600" width="400" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="pict/PP.png" alt="Placeholder gambar 600x400" height="600" width="400" class="w-full h-auto rounded-lg shadow-md max-w-xs mx-auto md:max-w-full">
                     </div>
                 </div>
             </section>
@@ -101,48 +102,155 @@
                 
                 <!-- Grid Kartu Portofolio -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    
                     <!-- Kartu Proyek 1 -->
-                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
-                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 1" class="w-full h-auto">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Project 1</h3>
-                            <p class="text-gray-600">Project description 1.</p>
+                    <a href="electrifying-bitcoin.html" class="block h-full hover:shadow-xl transition-shadow duration-200">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left h-full flex flex-col">
+                            <img src="pict/btc.png" alt="Bitcoin" class="w-full h-auto">
+                            <div class="p-6 flex-1 flex flex-col">
+                                <h3 class="font-bold text-xl mb-2 text-gray-900">Electrifying Bitcoin: Data Stream</h3>
+                                <p class="text-gray-600">An innovative project that visualizes Bitcoin data streams, transforming complex financial information into an engaging and interactive experience that captivates both enthusiasts and newcomers alike.
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Kartu Proyek 2 -->
-                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
-                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 2" class="w-full h-auto">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Project  2</h3>
-                            <p class="text-gray-600">Project description 2.</p>
+                    <a href="bermusik.html" class="block h-full hover:shadow-xl transition-shadow duration-200">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left h-full flex flex-col">
+                            <img src="pict/foto-bermusik.png" alt="Bermusik" class="w-full h-auto">
+                            <div class="p-6 flex-1 flex flex-col">
+                                <h3 class="font-bold text-xl mb-2 text-gray-900">Bermusik: A Visual Symphony</h3>
+                                <p class="text-gray-600">An immersive exploration of music through visuals, this project harmonizes sound and sight, creating a captivating experience that resonates with the soul.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Kartu Proyek 3 -->
-                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
-                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 3" class="w-full h-auto">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Project  3</h3>
-                            <p class="text-gray-600">Project description 3.</p>
+                    <a href="codecraft.html" class="block h-full hover:shadow-xl transition-shadow duration-200">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left h-full flex flex-col">
+                            <img src="pict/foto-programmer.png" alt="Programmer" class="w-full h-auto">
+                            <div class="p-6 flex-1 flex flex-col">
+                                <h3 class="font-bold text-xl mb-2 text-gray-900">CodeCraft: The Art of Programming</h3>
+                                <p class="text-gray-600">A deep dive into the world of programming, this project showcases the beauty of code through stunning visuals and interactive elements, inviting viewers to explore the creative side of software development.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Kartu Proyek 4 -->
-                    <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left">
-                        <img src="https://placehold.co/350x200/e2e8f0/cbd5e0?text=350x200" alt="Placeholder proyek 4" class="w-full h-auto">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-900">Proyek 4</h3>
-                            <p class="text-gray-600">Project description 4.</p>
+                    <a href="gamers.html" class="block h-full hover:shadow-xl transition-shadow duration-200">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden text-left h-full flex flex-col">
+                            <img src="pict/foto-gamer.png" alt="Gamers" class="w-full h-auto">
+                            <div class="p-6 flex-1 flex flex-col">
+                                <h3 class="font-bold text-xl mb-2 text-gray-900">Gamers: A Digital Odyssey</h3>
+                                <p class="text-gray-600">An exploration of the gaming world, this project delves into the culture and creativity of gamers, showcasing the artistry and innovation behind popular games.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
+                </div>
+            </section>
+
+            <!-- Bagian Skills -->
+            <section id="skills" class="py-12 md:py-20 border-b border-gray-200">
+                <h2 class="text-3xl font-bold mb-8 text-gray-900 text-center">My Skills</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="bg-blue-50 rounded-lg px-6 py-4 shadow text-blue-800 font-semibold">Web Development</div>
+                    <div class="bg-green-50 rounded-lg px-6 py-4 shadow text-green-800 font-semibold">Teaching</div>
+                    <div class="bg-yellow-50 rounded-lg px-6 py-4 shadow text-yellow-800 font-semibold">Public Speaking</div>
+                    <div class="bg-purple-50 rounded-lg px-6 py-4 shadow text-purple-800 font-semibold">Design</div>
+                    <div class="bg-pink-50 rounded-lg px-6 py-4 shadow text-pink-800 font-semibold">Content Creation</div>
+                </div>
+            </section>
+
+            <!-- Bagian Testimoni -->
+            <section id="testimonials" class="py-12 md:py-20 border-b border-gray-200 bg-gray-50">
+                <h2 class="text-3xl font-bold mb-8 text-gray-900 text-center">Testimonials</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="max-w-xs bg-white rounded-lg shadow p-6">
+                        <p class="italic text-gray-700 mb-4">"Syifa adalah pengajar yang sangat inspiratif dan selalu membantu siswa untuk berkembang."</p>
+                        <div class="font-bold text-gray-900">- Andi, Student</div>
+                    </div>
+                    <div class="max-w-xs bg-white rounded-lg shadow p-6">
+                        <p class="italic text-gray-700 mb-4">"Kreativitas dan dedikasinya dalam dunia digital sangat luar biasa."</p>
+                        <div class="font-bold text-gray-900">- Rina, Colleague</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bagian Call To Action (CTA) -->
+            <section id="cta" class="py-12 md:py-20 text-center">
+                <h2 class="text-3xl font-bold mb-4 text-gray-900">Let's Collaborate!</h2>
+                <p class="text-gray-600 mb-6">Tertarik bekerja sama atau ingin mengundang saya sebagai pembicara? Hubungi saya langsung melalui email atau WhatsApp.</p>
+                <a href="mailto:syifa@email.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition">Email Me</a>
+                <a href="https://wa.me/6287850404498" target="_blank" class="inline-block bg-green-500 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-green-600 transition ml-4">WhatsApp</a>
+            </section>
+
+            <!-- Bagian Fun Facts (Unik & Personal) -->
+            <section id="funfacts" class="py-12 md:py-20 border-t border-gray-200 bg-blue-50">
+                <h2 class="text-3xl font-bold mb-8 text-gray-900 text-center">Fun Facts About Me</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <div class="max-w-xs bg-white rounded-lg shadow p-6 text-center">
+                        <span class="text-4xl">🎸</span>
+                        <p class="mt-4 text-gray-700">Bisa memainkan 3 alat musik berbeda.</p>
+                    </div>
+                    <div class="max-w-xs bg-white rounded-lg shadow p-6 text-center">
+                        <span class="text-4xl">🌏</span>
+                        <p class="mt-4 text-gray-700">Pernah menjadi relawan di 2 negara.</p>
+                    </div>
+                    <div class="max-w-xs bg-white rounded-lg shadow p-6 text-center">
+                        <span class="text-4xl">☕</span>
+                        <p class="mt-4 text-gray-700">Pecinta kopi dan suka diskusi santai.</p>
+                    </div>
                 </div>
             </section>
         </main>
 
     </div>
+
+    <!-- Popup Modal -->
+    <div id="popupModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 hidden">
+        <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-8 relative">
+            <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-2xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold mb-4 text-gray-900">About Me</h3>
+            <p class="mb-4 text-gray-700">
+                Halo! Saya Abdur Rahman Syifa, seorang pengajar dan lulusan Sistem Informasi yang suka berbagi pengetahuan dan berkarya di dunia digital. Saya aktif di berbagai platform sosial media, jangan ragu untuk terhubung!
+            </p>
+            <div class="mb-2">
+                <span class="font-semibold text-gray-800">Kontak Sosial Media:</span>
+                <ul class="mt-2 space-y-1 text-blue-600">
+                    <li><a href="https://facebook.com/username" target="_blank" class="hover:underline">Facebook</a></li>
+                    <li><a href="https://instagram.com/username" target="_blank" class="hover:underline">Instagram</a></li>
+                    <li><a href="https://youtube.com/@username" target="_blank" class="hover:underline">YouTube</a></li>
+                    <li><a href="https://x.com/username" target="_blank" class="hover:underline">X (Twitter)</a></li>
+                    <li><a href="https://tiktok.com/@username" target="_blank" class="hover:underline">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const learnMoreBtn = document.getElementById('learnMoreBtn');
+        const popupModal = document.getElementById('popupModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        learnMoreBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            popupModal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', function() {
+            popupModal.classList.add('hidden');
+        });
+
+        // Optional: close modal when clicking outside the modal box
+        popupModal.addEventListener('click', function(e) {
+            if (e.target === popupModal) {
+                popupModal.classList.add('hidden');
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
